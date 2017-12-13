@@ -1,0 +1,7 @@
+INFO:TeleBot:Started polling.
+ERROR:TeleBot:TypeError occurred, args=('start() takes 0 positional arguments but 1 was given',)
+Traceback (most recent call last):
+  File "C:\Users\THANHHIEU\AppData\Local\Programs\Python\Python36-32\lib\site-packages\telebot\util.py", line 58, in run
+    task(*args, **kwargs)
+TypeError: start() takes 0 positional arguments but 1 was given
+

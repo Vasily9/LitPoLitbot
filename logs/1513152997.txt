@@ -1,0 +1,14 @@
+INFO:TeleBot:Started polling.
+ERROR:TeleBot:TypeError occurred, args=("'int' object is not subscriptable",)
+Traceback (most recent call last):
+  File "C:\Users\THANHHIEU\AppData\Local\Programs\Python\Python36-32\lib\site-packages\telebot\util.py", line 58, in run
+    task(*args, **kwargs)
+  File "main.py", line 303, in random_book
+    book = get_random_book()
+  File "<string>", line 2, in get_random_book
+  File "C:\Users\THANHHIEU\AppData\Local\Programs\Python\Python36-32\lib\site-packages\pony\orm\core.py", line 460, in new_func
+    try: return func(*args, **kwargs)
+  File "C:\Users\THANHHIEU\Desktop\flibusta_bot-master\src\database\WorkFiles\WorkFiles.py", line 105, in get_random_book
+    r_id = choice(book_ids)[0]
+TypeError: 'int' object is not subscriptable
+

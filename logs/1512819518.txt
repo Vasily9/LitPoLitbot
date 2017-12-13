@@ -1,0 +1,16 @@
+INFO:TeleBot:Started polling.
+ERROR:TeleBot:TypeError occurred, args=("track_message() missing 2 required positional arguments: 'msg' and 'name'",)
+Traceback (most recent call last):
+  File "main.py", line 108, in start
+    _, rq = msg.text.split(' ')
+ValueError: not enough values to unpack (expected 2, got 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THANHHIEU\AppData\Local\Programs\Python\Python36-32\lib\site-packages\telebot\util.py", line 58, in run
+    task(*args, **kwargs)
+  File "main.py", line 112, in start
+    track_message('start')
+TypeError: track_message() missing 2 required positional arguments: 'msg' and 'name'
+

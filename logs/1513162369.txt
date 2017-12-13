@@ -1,0 +1,22 @@
+INFO:TeleBot:Started polling.
+ERROR:TeleBot:ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other long poll or webhook"}\']',)
+Traceback (most recent call last):
+  File "C:\Users\THANHHIEU\AppData\Local\Programs\Python\Python36-32\lib\site-packages\telebot\util.py", line 58, in run
+    task(*args, **kwargs)
+  File "C:\Users\THANHHIEU\AppData\Local\Programs\Python\Python36-32\lib\site-packages\telebot\__init__.py", line 159, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "C:\Users\THANHHIEU\AppData\Local\Programs\Python\Python36-32\lib\site-packages\telebot\__init__.py", line 129, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "C:\Users\THANHHIEU\AppData\Local\Programs\Python\Python36-32\lib\site-packages\telebot\apihelper.py", line 175, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\THANHHIEU\AppData\Local\Programs\Python\Python36-32\lib\site-packages\telebot\apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "C:\Users\THANHHIEU\AppData\Local\Programs\Python\Python36-32\lib\site-packages\telebot\apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other long poll or webhook"}']
+
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other long poll or webhook"}']
+INFO:TeleBot:Exception occurred. Stopping.
+INFO:TeleBot:Stopped polling.
